@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+     overflow-x: hidden; 
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+}
+
+/* Seção de apresentação */
+
+#presentation {
+    background-image: url(assets/background.jpeg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#presentation::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#presentation nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#presentation nav ul {
+    display: flex;
+    font-size: 2rem;
+}
+
+#presentation nav ul li a {
+    margin-right: 2rem;
+    cursor: pointer;
+    color: #FFD700;
+}
+
+#presentation nav ul li a:hover {
+    border-bottom:1px solid #FFD700;
+    color: #FFF;
+}
+
+#presentation .hamburguer {
+    display: none;
+    margin-right: 15px;
+    cursor: pointer;
+    border: 3px solid #FFD700;
+    border-radius: 2rem;
+}
+
+#presentation .hamburguer .line {
+    width: 3rem;
+    height: 4px;
+    background-color: #FFD700;
+    border-radius: 30px;
+    transition: .5s ease-in-out;
+    position: relative;
+}
+
+.line:nth-child(2) {
+    margin: 5px 0;
+}
+
+.presentation-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#presentation h1 {
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+#presentation h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+    background-color: gold;
+}
+
+#presentation h1:nth-child(1) span {
+    animation-delay: .5s;
+}
+
+#presentation h1:nth-child(2) span {
+    animation-delay: 1.5s;
+}
+
+#presentation h1:nth-child(3) span {
+    animation-delay: 2.5s;
+}
+
+#presentation h1:nth-child(4) span {
+    animation-delay: 3.5s;
+}
+
+#presentation h1:nth-child(5) span {
+    animation-delay: 4.5s;
+}
+
+#presentation h1:nth-child(1) {
+    animation-delay: .8s;
+}
+
+#presentation h1:nth-child(2) {
+    animation-delay: 1.8s;
+}
+
+#presentation h1:nth-child(3) {
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 2.8s;
+}
+
+#presentation h1:nth-child(4) {
+
+    animation-delay: 3.8s;
+}
+
+#presentation h1:nth-child(5) {
+
+    animation-delay: 4.8s;
+}
+
+#presentation .cta {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    padding: 10px 0;
+    color: #FFD700;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid #FFD700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    z-index: 1;
+
+}
+
+#presentation .cta:hover {
+    color: #FFF;
+    font-weight: 400;
+}
+
+#presentation .cta::before {
+    content: "";
+    background-color: #FFD700;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s all;
+    z-index: -1;
+}
+
+#presentation .button1::before {
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+
+}
+
+#presentation .button1:hover::before {
+    height: 350%;
+    color: #FFF;
+}
+
+#presentation .contact {
+    right: 30px;
+    bottom: 30px;
+    position: fixed;
+}
+
+#presentation .contact .fab {
+    width: 50px;
+    height: 55px;
+    color: #FFD700;
+    font-size: 5.5rem;
+    cursor: pointer;
+}
+
+/* Seção de Projetos */
+
+
+
+#projects{
+    min-width: 100vw;
+    min-height: 100vh;
+   
+}
+
+.project-header .section-title {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 50px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+.all-projects{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+     flex-wrap: wrap; 
+    box-sizing: border-box;
+    
+}
+
+.all-projects .project-item{
+    position: relative;
+    width: 32%;
+    height: 500px;
+    background-color:#2d1159;
+    margin-bottom: 50px; 
+    border-radius: 30px;
+    
+    
+}
+
+.all-projects .project-item:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.all-projects .project-item:nth-child(5){
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.all-projects .project-img-wrapper {
+    position: relative;
+    max-width: 40%;
+    height: 40%;
+    background-color:#000;
+    border-radius: 50%;
+    top: -50px;
+    text-align: center;
+    margin: auto;
+}
+
+.all-projects .project-img-wrapper i{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-size: 100px;
+    color: #FFD700;
+    top: 25%;
+}
+/* Keyframes */
+
+@keyframes text_reveal {
+    100% {
+        color: white;
+    }
+}
+
+@keyframes text_reveal_name {
+    100% {
+        color: gold;
+        font-weight: 500px;
+    }
+}
+
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%
+    }
+
+}
+
