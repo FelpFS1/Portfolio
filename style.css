@@ -242,7 +242,7 @@ p {
     font-size: 4rem;
     font-weight: 500;
     color: #000;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     margin-top: 5px;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
@@ -254,7 +254,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center; 
-     flex-wrap: wrap; 
+    flex-wrap: wrap; 
     box-sizing: border-box;
     
 }
@@ -262,11 +262,13 @@ p {
 .all-projects .project-item{
     position: relative;
     width: 32%;
-    height: 500px;
+    height: auto;
     background-color:#2d1159;
     margin-bottom: 50px; 
-    border-radius: 30px;
-    
+    border-radius: 30px;  
+}
+.all-projects .project-item{
+    margin-bottom: 135px;
     
 }
 
@@ -278,25 +280,82 @@ p {
     margin-left: 10px;
     margin-right: 10px;
 }
-.all-projects .project-img-wrapper {
+
+.all-projects .project-item .project-img-wrapper {
     position: relative;
-    max-width: 40%;
-    height: 40%;
-    background-color:#000;
+    max-width: 250px;
+    height: 250px;
     border-radius: 50%;
-    top: -50px;
+    top: -100px;
     text-align: center;
     margin: auto;
 }
 
-.all-projects .project-img-wrapper i{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    font-size: 100px;
-    color: #FFD700;
-    top: 25%;
+.all-projects .project-item .image1{
+    background-image: url(assets/calculator-image.jpg);
+    background-position: center;
+    background-size: cover;
 }
+.all-projects .project-item .image2{
+    background-image: url(assets/fees-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.all-projects .project-item .title-project{
+    position: relative;
+    text-align: center;
+    margin:auto;
+    top:-80px;
+}
+
+.all-projects .project-item .title-project h2{
+    font-size: 3.4rem;
+    color: #FFD700;
+}
+.all-projects .project-item .description-project{
+    width: 80%;
+    height: 170px;
+    position: relative;
+    top:-60px;
+    margin: auto;
+    text-align: justify;
+    word-wrap: break-word;
+    
+}
+
+.all-projects .project-item .description-project p{
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+.all-projects .project-item .btn-project{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    top: -30px;
+}
+
+.all-projects .project-item .btn-project button{
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+    border: 3px solid #FFD700;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.all-projects .project-item .btn-project button a{
+    color:#FFD700;
+
+}
+
 /* Keyframes */
 
 @keyframes text_reveal {
