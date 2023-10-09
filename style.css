@@ -308,6 +308,14 @@ p {
     background-size: cover;
 }
 
+.all-projects .project-item .imagecoming{
+    /* background-image: url(assets/breve.jpg); */
+    background-image: url(assets/embreve.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 .all-projects .project-item .title-project{
