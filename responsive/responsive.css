@@ -71,6 +71,28 @@
         transform: translateX(1000px);
         transition: .5s ease-in-out all;
     }
+    li.contacts{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    li.contacts i{
+        font-size: 200%;
+        margin: 6rem 1.5rem;
+        color: #FFD700;
+        cursor: pointer;
+    }
+
+    
+
+    .contacts{
+        display: inline;
+        box-sizing: content-box;
+        flex: 1;
+        flex-direction: row;
+    }
+    
 
     #presentation nav .menu_toggle {
         transform: translateX(0);

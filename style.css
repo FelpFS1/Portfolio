@@ -62,12 +62,17 @@ p {
 #presentation nav ul {
     display: flex;
     font-size: 2rem;
+    list-style: none;
 }
 
 #presentation nav ul li a {
     margin-right: 2rem;
     cursor: pointer;
     color: #FFD700;
+}
+
+#presentation nav #contac{
+    display: none;
 }
 
 #presentation nav ul li a:hover {
