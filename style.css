@@ -430,5 +430,170 @@ p {
 }
 
 
+/* Sessão de responsividade */
+
+
+/* Media Query */
+@media only screen and (max-width: 1100px) {
+    .all-projects .project-item .project-img-wrapper {
+      width: 200px;
+      height: 200px;
+    }
+    .all-projects .project-item .title-project h2 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* Menu Hamburguer Mobile */
+  @media only screen and (max-width: 950px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    #presentation .hamburguer {
+      display: block;
+      z-index: 1000;
+    }
+  
+    .check {
+      display: block;
+      padding: 1rem;
+    }
+    .check .line:nth-child(1) {
+      top: 0;
+      transform: rotate(0);
+    }
+    .check .line:nth-child(2) {
+      top: 0;
+      transform: rotate(0);
+    }
+    .check .line:nth-child(3) {
+      top: 0;
+      transform: rotate(0);
+    }
+  
+    #toggle {
+      display: none;
+    }
+  
+    #toggle:checked + .check .line:nth-child(1) {
+      transform: rotate(45deg);
+      top: 9px;
+    }
+  
+    #toggle:checked + .check .line:nth-child(2) {
+      transform: translateX(-100px);
+      width: 30px;
+      visibility: hidden;
+      opacity: 0;
+    }
+  
+    #toggle:checked + .check .line:nth-child(3) {
+      transform: rotate(-45deg);
+      top: -9px;
+    }
+  
+    #presentation nav .menu {
+      list-style: none;
+      text-decoration: none;
+      position: absolute;
+      width: 50vw;
+      height: 100vh;
+      background-color: #41156c;
+      top: 0;
+      right: 0;
+      z-index: 1000;
+      transform: translateX(1000px);
+      transition: 0.5s ease-in-out all;
+    }
+    li.contacts {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    li.contacts i {
+      text-decoration: none;
+      font-size: 80%;
+      margin: 5rem 0.2rem;
+      color: #ffd700;
+      cursor: pointer;
+    }
+    li.contacts a {
+      text-decoration: none;
+    }
+  
+    #presentation nav .menu_toggle {
+      transform: translateX(0);
+    }
+  
+    #presentation .colorB {
+      border: 4px solid #fff;
+    }
+  
+    #presentation .hamburguer .check .color {
+      color: #fff;
+    }
+  
+    #presentation nav ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #presentation nav ul li:nth-child(1) {
+      margin-top: 40vh;
+      margin-bottom: 40px;
+    }
+  
+    #presentation nav ul li a {
+      color: #fff;
+    }
+  
+    .project-header .section-title {
+      margin-bottom: 80px;
+      margin-top: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      text-align: center;
+    }
+  
+    #presentation .cta {
+      display: flex;
+      justify-content: center;
+      width: 150px;
+      padding: 10px 0;
+      color: #FFD700;
+      overflow: hidden;
+      position: relative;
+      border: 3px solid #FFD700;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      margin:20px 10px;
+      z-index: 1;
+  
+  }
+  
+  
+  
+    .all-projects {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .all-projects .project-item {
+      width: 80vw;
+      margin-left: 1px;
+      margin-bottom: 100px;
+    }
+  
+    .all-projects .project-item .project-img-wrapper {
+      width: 180px;
+      height: 180px;
+      top: -80px;
+    }
+  }
+  
+
 
 
