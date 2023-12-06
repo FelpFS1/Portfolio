@@ -38,14 +38,14 @@ p {
 
 .hidden-animation{
     opacity: 0;
-    transition: all 2s;
+    transition: all 1s;
     transform: translateX(-100%);
-    filter: blur(30px);
+    filter: blur(10px);
 }
 
 .show-animation{
     opacity: 1;
-    transition: all 2s;
+    transition: all 1s;
     transform: translateX(0);
     filter: blur(0);
 }
@@ -332,21 +332,21 @@ p {
 .all-projects .project-item:nth-child(2){
     margin-left: 10px;
     margin-right: 10px;
-    transition-delay: 200ms;
+    transition-delay: 100ms;
 }
 .all-projects .project-item:nth-child(3){
-    transition-delay: 400ms;
+    transition-delay: 200ms;
 }
 .all-projects .project-item:nth-child(4){
-    transition-delay: 600ms;
+    transition-delay: 300ms;
 }
 .all-projects .project-item:nth-child(5){
     margin-left: 10px;
     margin-right: 10px;
-    transition-delay: 800ms;
+    transition-delay: 400ms;
 }
 .all-projects .project-item:nth-child(6){
-    transition-delay: 1000ms;
+    transition-delay: 500ms;
 }
 
 
