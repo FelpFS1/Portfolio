@@ -6,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     
+    
 }
 
 
@@ -14,6 +15,7 @@ html {
     font-family: 'Poppins', 'Times New Roman', Times, serif;
     scroll-behavior: smooth;
      overflow-x: hidden; 
+     
 }
 
 a {
@@ -32,6 +34,20 @@ p {
     font-weight: 200;
     letter-spacing: 0.05rem;
     
+}
+
+.hidden-animation{
+    opacity: 0;
+    transition: all 2s;
+    transform: translateX(-100%);
+    filter: blur(30px);
+}
+
+.show-animation{
+    opacity: 1;
+    transition: all 2s;
+    transform: translateX(0);
+    filter: blur(0);
 }
 
 /* Seção de apresentação */
@@ -121,7 +137,7 @@ p {
 #presentation h1 {
     display: block;
     width: fit-content;
-    font-size: 5rem;
+    font-size: 4rem;
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
@@ -161,6 +177,12 @@ p {
 #presentation h1:nth-child(6) span {
     animation-delay: 5.5s;
 }
+#presentation h1:nth-child(7) span {
+    animation-delay: 6.5s;
+}
+#presentation h1:nth-child(8) span {
+    animation-delay: 7.5s;
+}
 
 
 #presentation h1:nth-child(1) {
@@ -189,6 +211,12 @@ p {
 
     animation-delay: 5.8s;
 }
+#presentation h1:nth-child(7) {
+    animation-delay: 6.8s;
+}
+#presentation h1:nth-child(8) {
+    animation-delay: 7.8s;
+}
 
 #presentation .links-projects-about-me{
     display: flex;
@@ -210,6 +238,7 @@ p {
     letter-spacing: .1rem;
     margin:20px 10px;
     z-index: 1;
+    
 
 }
 
@@ -303,11 +332,23 @@ p {
 .all-projects .project-item:nth-child(2){
     margin-left: 10px;
     margin-right: 10px;
+    transition-delay: 200ms;
+}
+.all-projects .project-item:nth-child(3){
+    transition-delay: 400ms;
+}
+.all-projects .project-item:nth-child(4){
+    transition-delay: 600ms;
 }
 .all-projects .project-item:nth-child(5){
     margin-left: 10px;
     margin-right: 10px;
+    transition-delay: 800ms;
 }
+.all-projects .project-item:nth-child(6){
+    transition-delay: 1000ms;
+}
+
 
 .all-projects .project-item .project-img-wrapper {
     position: relative;
@@ -392,8 +433,13 @@ p {
     text-transform: uppercase;
     background: transparent;
     border: 3px solid #FFD700;
+    border-radius: 1rem;
     font-size: 2rem;
     cursor: pointer;
+}
+.all-projects .project-item .btn-project button:hover a{
+    color:  #FFFF;
+    
 }
 
 .all-projects .project-item .btn-project button a{
