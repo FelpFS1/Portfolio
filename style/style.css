@@ -52,7 +52,7 @@ p {
 /* Seção de apresentação */
 
 #presentation {
-    background-image: url(assets/background.avif);
+    background-image: url('../assets/background.avif');
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -129,6 +129,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -291,9 +292,10 @@ p {
 #projects{
     min-width: 100vw;
     min-height: 100vh;
+   
 }
 
-.project-header .section-title {
+.project-header .section-title,.about-me-header .section-title {
     font-size: 4rem;
     font-weight: 500;
     color: #000;
@@ -311,7 +313,7 @@ p {
     justify-content: center; 
     flex-wrap: wrap; 
     box-sizing: border-box;
-    
+  
 }
 
 .all-projects .project-item{
@@ -321,7 +323,35 @@ p {
     background-color:#2d1159;
     margin-bottom: 50px; 
     border-radius: 30px;
-    background-image: url(./assets/backgroundproject.avif);
+    background-image: url(../assets/backgroundproject.avif);
+}
+
+.all-projects .show-gif{    
+    background-image: url(/assets/school-project.gif); 
+    width: 32%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100%;
+ 
+}
+
+
+
+.all-projects  #cancel-gif{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #F76461;
+    right: 10px;
+    top: 10px;
+    border: none;
+    color: #FFF;
+    font-size: 2rem;
+    cursor: pointer;
+    
+    
 }
 .all-projects .project-item{
     margin-bottom: 135px;
@@ -360,19 +390,19 @@ p {
 }
 
 .all-projects .project-item .image1{
-    background-image: url(assets/calculator-image.avif);
+    background-image: url(../assets/calculator-image.avif);
     background-position: center;
     background-size: cover;
 }
 .all-projects .project-item .image2{
-    background-image: url(assets/fees-image.avif);
+    background-image: url(../assets/fees-image.avif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .all-projects .project-item .imagecoming{
-    background-image: url(assets/embreve.png);
+    background-image: url(../assets/embreve.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -401,16 +431,6 @@ p {
     word-wrap: break-word;
     
 }
-
-#about-me{
-    width: 100vw;
-    height: 50vh;
-  }
-  .about-me-header {
-    position: relative;
-    margin:auto;
-    text-align: center;
-  }
 
 .all-projects .project-item .description-project p{
     font-size: 1.5rem;
@@ -445,6 +465,70 @@ p {
     color:#FFD700;
 
 }
+
+#about-me{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top: -7.5vw;
+
+  }
+  .about-me-header {
+    margin:auto;
+    text-align: center;
+  }
+#about-me .card-about-me{
+    position: relative;
+    display: flex;
+    margin: auto;
+    max-width: 1700px;
+    background-image: url(/assets/backgroundproject.avif);
+    min-height: 100vh;
+    padding: 1rem;
+    border-radius: 76px;
+    top: -6rem;
+}
+
+.card-about-me #about-img{
+    width: 400px;
+    height: 500px;
+    border-radius: 76px;
+    background: url(/assets/photo_2024-01-06_13-51-23.jpg);
+    background-size: cover;
+}
+
+.card-about-me #content-about-me{
+    max-width: 50%;
+    margin-left: 5rem;
+    word-spacing: 5px;
+    line-height: 2em;
+    
+}
+
+.card-about-me #content-about-me p{
+    margin-top: 5rem;
+    font-size: 3rem;
+    color: #FFF;
+    
+}
+
+.card-about-me #content-about-me h3{
+    margin: 10rem 0 10rem 0;
+    font-size: 5rem;
+    color: #FFD700;
+    
+}
+
+.card-about-me #content-about-me #technologies{
+    display: flex;
+    list-style: none;
+}
+
+.card-about-me #content-about-me #technologies li img{
+    width: 100px;
+    height: 100px;
+}
+
 
 /* Keyframes */
 
@@ -494,6 +578,13 @@ p {
     body {
       overflow-x: hidden;
     }
+
+    .presentation-container{
+        margin-left: 2rem;
+    }
+
+
+    
   
     #presentation .hamburguer {
       display: block;
@@ -605,18 +696,18 @@ p {
     #presentation .cta {
       display: flex;
       justify-content: center;
-      width: 150px;
+      width: 120px;
       padding: 10px 0;
       color: #FFD700;
       overflow: hidden;
       position: relative;
       border: 3px solid #FFD700;
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-transform: uppercase;
       letter-spacing: .1rem;
-      margin:20px 10px;
+      margin:10px 5px;
       z-index: 1;
-  
+      
   }
   
   
@@ -627,15 +718,62 @@ p {
     }
   
     .all-projects .project-item {
-      width: 80vw;
+      width: 90vw;
+      height: 48vh;
       margin-left: 1px;
       margin-bottom: 100px;
     }
+
+    .all-projects .show-gif{    
+        background-image: url(/assets/school-project.gif); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 120%;
+     
+    }
+
   
     .all-projects .project-item .project-img-wrapper {
       width: 180px;
       height: 180px;
       top: -80px;
+    }
+
+    #about-me .card-about-me{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-about-me #about-img{
+        margin: 0 auto;
+        max-width: 340px;
+        max-height: 280px;
+        border-radius: 76px;
+        background: url(/assets/photo_2024-01-06_13-51-23.jpg);
+        background-size: cover;
+    }
+    .card-about-me #content-about-me p{
+        font-size: 1.5rem;
+        
+    }
+
+    .card-about-me #content-about-me{
+        max-width: 100%;
+        margin: 0;
+         
+    }
+    .card-about-me #content-about-me #technologies{
+        justify-content: center;
+    }
+    .card-about-me #content-about-me h3{
+        
+        text-align: center;
+    }
+
+    .card-about-me #content-about-me #technologies li img{
+        width:50px;
+        height: 50px;
     }
   }
   

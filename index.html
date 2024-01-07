@@ -8,7 +8,7 @@
       content="My portfolio to display my projects and a little about myself"
     />
     <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
     <script
       src="https://kit.fontawesome.com/456995a0f4.js"
       crossorigin="anonymous"
@@ -94,15 +94,17 @@
             <h1 class="section-title"><span>Projetos</span></h1>
           </div>
           <div class="all-projects">
-            <div class="project-item hidden-animation" >
+           
+            <div class="project-item hidden-animation" >  
               <div class="project-img-wrapper image1"></div>
+              <button id="cancel-gif">X</button>
               <div class="title-project">
-                <h2>Calculadora</h2>
+                <h2>Gerenciador de aluno</h2>
               </div>
               <div class="description-project">
                 <p>
-                  Um pequeno projeto feito no começo do meu apendizado de
-                  JavaScript
+                  Um projeto feito usando HTML,CSS,JavaScript e Firebase.
+                  Feito para estudos mas intuitivo para gerenciar notas e dados de alunos.
                 </p>
               </div>
               <div class="btn-project">
@@ -170,11 +172,29 @@
       </section>
       <section id="about-me" class="hidden-animation">
         <div class="about-me-header">
-          <h1>Sobre mim</h1>
+          <h1 class="section-title"><span>Sobre mim</span></h1>
+          
+        </div>
+        <div class="card-about-me">
+          <div id="about-img">
+
+          </div>
+          <div id="content-about-me">
+             <p>Olá, meu nome é Felipe. Sou desenvolvedor Web, tenho 23 anos. Atualmente estou cursando Analise e Desenvolvimento de Sistemas. Sou um jovem curioso que sempre está buscando aprender coisas novas, o mundo da tecnologia me deixa animado, estou sempre estudando para suprir as necessidades de alguém!</p>
+              <h3>Tecnologias</h3>
+              <ul id="technologies">
+              <li><img src="./assets/html5icon.webp" alt="icon-html5" srcset=""></li>
+              <li><img src="./assets/iconcss.webp" alt="icon-css3" srcset=""></li>
+              <li><img src="./assets/javascript-icon.webp" alt="icon-javascript" srcset=""></li>
+              <li><img src="./assets/react-icon.png" alt="icon-react" srcset=""></li>
+              <li><img src="./assets/node-icon.png" alt="icon-node" srcset=""></li>
+            </ul>
+            </div>
         </div>
       </section>
     </main>
-    <script src="toggleMenu.js"></script>
-    <script src="hidden.js"></script>
+    <script src="./js/toggleMenu.js"></script>
+    <script src="./js/hidden.js"></script>
+    <script src="./js/showGif.js"></script>
   </body>
 </html>
