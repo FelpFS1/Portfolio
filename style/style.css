@@ -327,7 +327,7 @@ p {
 }
 
 .all-projects .show-gif{    
-    background-image: url(/assets/school-project.gif); 
+    background-image: url(../assets/school-project.gif); 
     width: 32%;
     height: auto;
     background-position: center;
@@ -482,7 +482,7 @@ p {
     display: flex;
     margin: auto;
     max-width: 1700px;
-    background-image: url(/assets/backgroundproject.avif);
+    background-image: url('../assets/backgroundproject.avif');
     min-height: 100vh;
     padding: 1rem;
     border-radius: 76px;
@@ -493,7 +493,7 @@ p {
     width: 400px;
     height: 500px;
     border-radius: 76px;
-    background: url(/assets/photo_2024-01-06_13-51-23.jpg);
+    background: url('../assets/photo_2024-01-06_13-51-23.jpg');
     background-size: cover;
 }
 
@@ -719,13 +719,13 @@ p {
   
     .all-projects .project-item {
       width: 90vw;
-      height: 48vh;
+      height:67vh;
       margin-left: 1px;
       margin-bottom: 100px;
     }
 
     .all-projects .show-gif{    
-        background-image: url(/assets/school-project.gif); 
+        background-image: url('../assets/school-project.gif'); 
         background-position: center;
         background-repeat: no-repeat;
         background-size: 120%;
@@ -750,7 +750,7 @@ p {
         max-width: 340px;
         max-height: 280px;
         border-radius: 76px;
-        background: url(/assets/photo_2024-01-06_13-51-23.jpg);
+        background: url(../assets/photo_2024-01-06_13-51-23.jpg);
         background-size: cover;
     }
     .card-about-me #content-about-me p{
