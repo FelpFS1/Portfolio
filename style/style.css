@@ -10,6 +10,8 @@
 }
 
 
+
+
 html {
     font-size: 10px;
     font-family: 'Poppins', 'Times New Roman', Times, serif;
@@ -52,12 +54,22 @@ p {
 /* Seção de apresentação */
 
 #presentation {
-    background-image: url('../assets/background.avif');
+    background-image: image-set(url("../assets/background.avif") type("image/avif"),
+    url("../assets/background.webp") type("image/webp"));
     background-size: cover;
     background-position: top center;
     position: relative;
     z-index: 1;
 }
+
+@supports (-ms-ime-align:auto) {
+    #presentation {
+        background-image: url("../assets/embreve.png"); /* Use uma extensão diferente, como PNG */
+    }
+}
+
+
+
 
 #presentation::after {
     content: '';
@@ -323,7 +335,8 @@ p {
     background-color:#2d1159;
     margin-bottom: 150px; 
     border-radius: 30px;
-    background-image: url(../assets/backgroundproject.avif);
+    background-image: image-set(url("../assets/backgroundproject.avif") type("image/avif"),
+    url("../assets/backgroundproject.webp") type("image/webp"));
 }
 
 .all-projects .show-gif{    
@@ -401,7 +414,8 @@ p {
     background-size: cover;
 }
 .all-projects .project-item .image2{
-    background-image: url(../assets/fees-image.avif);
+    background-image: image-set(url("../assets/fees-image.avif") type("image/avif"),
+    url("../assets/fees-image.webp") type("image/webp"));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -488,7 +502,8 @@ p {
     display: flex;
     margin: auto;
     max-width: 1700px;
-    background-image: url(../assets/backgroundproject.avif);
+    background-image:image-set(url("../assets/backgroundproject.avif") type("image/avif"),
+    url("../assets/backgroundproject.webp") type("image/webp"));
     min-height: 100vh;
     padding: 1rem;
     border-radius: 76px;
