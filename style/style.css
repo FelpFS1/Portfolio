@@ -387,8 +387,8 @@ p {
 .all-projects .project-img-wrapper .fa-play{
     position: relative;
     margin: auto;
-    top: 35%;
-    font-size: 4vw;
+    top: 38%;
+    font-size: 8rem;
     color: rgba(128, 128, 128, 0.5);
     cursor: pointer;
     text-align: center;
@@ -573,6 +573,10 @@ p {
     .all-projects .project-item .project-img-wrapper {
       width: 200px;
       height: 200px;
+    }
+
+    .all-projects .project-img-wrapper .fa-play{
+        font-size: 6rem;
     }
     .all-projects .project-item .title-project h2 {
       font-size: 2.5rem;
@@ -772,8 +776,9 @@ p {
     .card-about-me #content-about-me #technologies{
         justify-content: center;
     }
-    .card-about-me #content-about-me h3{
-        
+    .card-about-me #content-about-me h3{ 
+        margin: 50px 0;
+        font-size: 4.2rem;
         text-align: center;
     }
 
@@ -784,5 +789,19 @@ p {
   }
   
 
+  @media only screen and (max-width: 300px){
+    .all-projects .project-item{
+        height: 72vh;
+    }
 
+    .card-about-me #about-img{
+        max-width: 100%;
+        margin: 0;
+         
+    }
+    .card-about-me #content-about-me #technologies li img{
+        width:40px;
+        height: 40px;
+    }
+  }
 
