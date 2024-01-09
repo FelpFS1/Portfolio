@@ -321,7 +321,7 @@ p {
     width: 32%;
     height: auto;
     background-color:#2d1159;
-    margin-bottom: 50px; 
+    margin-bottom: 150px; 
     border-radius: 30px;
     background-image: url(../assets/backgroundproject.avif);
 }
@@ -350,13 +350,8 @@ p {
     color: #FFF;
     font-size: 2rem;
     cursor: pointer;
-    
-    
 }
-.all-projects .project-item{
-    margin-bottom: 135px;
-    
-}
+
 
 .all-projects .project-item:nth-child(2){
     margin-left: 10px;
@@ -387,10 +382,21 @@ p {
     top: -100px;
     text-align: center;
     margin: auto;
+
+}
+.all-projects .project-img-wrapper .fa-play{
+    position: relative;
+    margin: auto;
+    top: 35%;
+    font-size: 4vw;
+    color: rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+    text-align: center;
+    
 }
 
 .all-projects .project-item .image1{
-    background-image: url(../assets/calculator-image.avif);
+    background-image: url(../assets/school-project.webp);
     background-position: center;
     background-size: cover;
 }
@@ -482,7 +488,7 @@ p {
     display: flex;
     margin: auto;
     max-width: 1700px;
-    background-image: url('../assets/backgroundproject.avif');
+    background-image: url(../assets/backgroundproject.avif);
     min-height: 100vh;
     padding: 1rem;
     border-radius: 76px;
@@ -493,7 +499,7 @@ p {
     width: 400px;
     height: 500px;
     border-radius: 76px;
-    background: url('../assets/photo_2024-01-06_13-51-23.jpg');
+    background: url(../assets/photo_2024-01-06_13-51-23.jpg);
     background-size: cover;
 }
 
@@ -725,7 +731,7 @@ p {
     }
 
     .all-projects .show-gif{    
-        background-image: url('../assets/school-project.gif'); 
+        background-image: url(../assets/school-project.gif); 
         background-position: center;
         background-repeat: no-repeat;
         background-size: 120%;
