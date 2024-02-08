@@ -349,6 +349,16 @@ p {
  
 }
 
+.all-projects .show-gif-react-project{
+    background-image: url(../assets/react_imc_project.gif); 
+    width: 32%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100%;
+
+}
+
 
 
 .all-projects  #cancel-gif{
@@ -414,8 +424,8 @@ p {
     background-size: cover;
 }
 .all-projects .project-item .image2{
-    background-image: image-set(url("../assets/fees-image.avif") type("image/avif"),
-    url("../assets/fees-image.webp") type("image/webp"));
+    background-image: image-set(url("../assets/IMC.avif") type("image/avif"),
+    url("../assets/IMC.png") type("image/webp"));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -514,7 +524,7 @@ p {
     width: 400px;
     height: 500px;
     border-radius: 76px;
-    background: url(../assets/photo_2024-01-06_13-51-23.jpg);
+    background: url(../assets/myphotoabout.jpg);
     background-size: cover;
 }
 

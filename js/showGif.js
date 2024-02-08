@@ -8,6 +8,10 @@ function showGif(e) {
       {
         0: { name: "image1", class: "show-gif" },
       },
+      {
+        1: { name: "image2", class: "show-gif-react-project" },
+      },
+      
     ];
     classItem.forEach((item, i) => {
       if (className.includes(item[i].name)) {
@@ -42,5 +46,3 @@ function createButton(item, i, div, data) {
       
     });
   }
-
-
